@@ -6,7 +6,7 @@ RUN yum install -y \
 	deltarpm \
 	python-deltarpm \
 	git
-RUN git clone --recursive -- https://github.com/crohr/rpm-s3 /usr/local/rpm-s3
+RUN git clone --recursive -- https://github.com/kedare/rpm-s3 /usr/local/rpm-s3
 RUN adduser rpms3
 USER rpms3
 RUN echo 'PATH=$PATH:/usr/local/rpm-s3/bin/' > /home/rpms3/.bashrc
